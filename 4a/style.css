@@ -1,0 +1,370 @@
+:root {
+  --main-white: #ffffff;
+  --main-pink: #f9cacd;
+  --main-grey: #cecece;
+  --main-purpure: #b6b2e6;
+ }
+ 
+ body { margin: 0 }
+ 
+ .container {
+  width: 60%;
+  max-width: 1200px;
+  min-width: 900px;
+ 
+  margin: auto;
+ 
+  >header {
+   display: flex;
+   >li {
+    list-style-type: none;
+    padding: 20px 15px;
+    cursor: pointer;
+    transition: 0.25s;
+    &:hover {
+     color: var(--main-purpure)
+    }
+   }
+  }
+ 
+  .main-picture {
+   box-sizing: border-box;
+   margin: 25px 0;
+   width:100%;
+   height: 600px;
+   background-image: url('la.jpeg');
+   background-position: center;
+   background-size: cover;
+   border-radius: 25px;
+   position: relative;
+   overflow: hidden;
+ 
+   color: whitesmoke;
+ 
+   .filter {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+   }
+ 
+   >div:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+    width:100%;
+    height: 100%;
+ 
+    box-sizing: border-box;
+    padding: 30px;
+ 
+    display: flex;
+    flex-direction: column;
+ 
+    justify-content: center;
+ 
+    .title {
+     font-size: 3.5em;
+     font-weight: bolder;
+    }
+    .description {
+     font-size: 1em;
+     margin: 10px 0;
+    }
+ 
+    >div:last-child {
+     width:50%;
+     background-color: var(--main-grey);
+     padding: 10px;
+     border-radius: 20px;
+ 
+     display: flex;
+     /* justify-content: center; */
+     align-items: center;
+ 
+     >input:focus-visible {
+      outline: none;
+     }
+ 
+     >input {
+      border: none;
+      padding: 15px;
+      border-radius: 15px;
+      flex-grow: 3;
+     }
+ 
+     >button {
+      background-color: black;
+      padding: 15px;
+      color: whitesmoke;
+      text-transform: uppercase;
+      border-radius: 15px;
+      margin-left: 15px;
+     }
+    }
+   }
+  }
+ }
+ 
+ .cities-wrap {
+  width:100%;
+  background-color: var(--main-pink);
+ }
+ 
+ .cities {
+  box-sizing: border-box;
+  height: 790px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 35px 0;
+ 
+  >.item {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ 
+   .title {
+    font-size: 1.25em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px 0;
+   }
+ 
+   .description {
+    font-size: 0.75em;
+    text-align: center;
+   }
+ 
+   .item-picture {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 65%;
+    background-position: center;
+    background-size: cover;
+   }
+ 
+   >.item-picture[city="paris"] {
+    background-image: url('paris.jpeg');
+   }
+ 
+   >.item-picture[city="New York"] {
+    background-image: url('pexels-photo-325185.jpeg');
+   }
+ 
+   >.item-picture[city="Los Angeles"] {
+    background-image: url('la.jpeg');
+   }
+ 
+   >.item-picture[city="Chicago"] {
+    background-image: url('pexels-photo-2090651.jpeg');
+   }
+ 
+   >.item-picture[city="Verona"] {
+    background-image: url('pexels-photo-1769369.jpeg');
+   }
+ 
+   >.item-picture[city="Tokio"] {
+    background-image: url('pexels-photo-1029615.jpeg');
+   }
+  }
+ }
+ .NY {
+  position: relative;
+  font-size: 30px;
+  right: 530px;
+  font-weight: bolder;
+ }
+ .sample {
+  position: relative;
+  font-size: 15px;
+  right: 430px;
+ }
+
+ .photo1 {
+  background-image: url(pexels-photo-325185.jpeg);
+  box-sizing: border-box;
+  background-position: center;
+  margin: 25px 0;
+  width: 1200px;
+  height: 600px;
+  background-size: cover;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+ }
+
+ .houses-wrap {
+  width:100%;
+  
+ }
+
+ .houses {
+  box-sizing: border-box;
+  position: relative;
+  justify-content: center;
+  width: 1200px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 35px 0;
+ }
+  .house {
+   width: 380px;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+
+ .item-house {
+    width: 380px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+   }
+.item-house[house="1"] {
+    background-image: url('house-isolated-field.jpg');
+   }
+.item-house[house="2"] {
+    background-image: url('apartment-building-city-with-copy-space.jpg');
+   }
+.item-house[house="3"] {
+    background-image: url('la.jpeg');
+   }
+.item-house[house="4"] {
+    background-image: url('pexels-photo-3874015.jpeg');
+   }
+.item-house[house="5"] {
+    background-image: url('pexels-photo-3855622.jpeg');
+   }         
+.item-house[house="6"] {
+    background-image: url('low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg');
+   }
+
+   .container_key{
+    max-width: 1200px;
+    min-width: 900px;
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+  }
+  .key{
+    position: relative;
+    background-image: url('wooden-keychain-white.jpg');
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    border-radius: 25px;
+    display: flex;
+    margin-right: 2%;
+  }
+  .keytext {
+    float: right;
+    z-index: 1;
+    display: flex;
+    background-color: gray;
+    border-radius: 25px;
+    width: 50%;
+    height: 500px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .textkey {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 16px;
+    margin-left: 20px;
+  }
+  .textkey2 {
+    font-size: 1em;
+    margin-left: 20px;
+   }
+  li{
+    margin-left: 18px;
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin-left: 20px;
+    margin-top: 25px;
+  }
+  .textkey3 {
+    margin-top: 25px;
+    font-size: 1em;
+    margin-left: 20px;
+   }
+   .title3{
+    font-weight: bolder ;
+    color:black;
+    font-size: 3.2em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+   }
+   .text3 {
+    font-size: 1em;
+   }
+   .main-picture3 {
+    box-sizing: border-box;
+    margin: 25px 0;
+    width:50%;
+    height: 500px;
+    background-image: url('low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  .container4 {
+    height: 310px;
+    width:100%;
+    background-color: var(--main-pink);
+   }
+   .containerlast{
+    width: 60%;
+    max-width: 1200px;
+    min-width: 900px;
+    height: 250px;
+    margin: auto;
+    padding-top: 30px;
+   }
+   .containerokthisislast{
+    display: flex;
+    height: 40px;
+    padding-top: 30px;
+    align-items: center;
+  
+    >input{
+      border: none;
+      border-radius: 30px;
+      width: 300px;
+      margin-left: 15px;
+      padding: 15px;
+    }
+    >button {
+      background-color: black;
+      padding: 12px;
+      color: whitesmoke;
+      text-transform: uppercase;
+      border-radius: 34px;
+      margin-left: 15px;
+      cursor: pointer;
+      transition: 0.25s;
+   }
+  }
+  .text4{
+    padding-left: 30px;
+    position: center;
+    justify-content: center;
+  }
+  
