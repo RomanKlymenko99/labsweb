@@ -1,0 +1,360 @@
+:root {
+    --main-yellow: #e8b846
+   }
+   
+   body {
+    margin: 0;
+   }
+   
+   * {
+    box-sizing: border-box;
+   }
+   
+   .section:nth-child(1) {
+    width:100%;
+    height: 80vh;
+    min-height: 700px;
+    background-image: url('jhj-min.jpg');
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 40px;
+   
+    >div {
+     width:60%;
+     height: 80%;
+     margin: auto;
+   
+     color: whitesmoke;
+   
+     display: flex;
+     justify-content: end;
+   
+     .title,.description {
+      padding-top: 35px;
+     }
+   
+     .title {
+      width: 40%;
+      height: 100%;
+   
+      font-size: 2.5em;
+      font-weight: bolder;
+      border-right: 10px solid var(--main-yellow);
+     }
+   
+     .description {
+      width: 40%;
+      height: 100%;
+   
+      font-size: 1.25em;
+      margin-left: 20px;
+   
+      >div:last-child {
+       background-color: var(--main-yellow);
+       color: black;
+       border-radius: 10px;
+       padding: 20px 10px;
+       width: 50%;
+       text-align: center;
+   
+       font-size: 1em;
+       font-weight: bolder;
+       text-transform: uppercase;
+   
+       margin-top: 80px;
+      }
+     }
+    }
+   }
+   
+   .section:nth-child(2) {
+    width: 100%;
+    height: 250px;
+    background-color: #d9d9d9;
+   
+    display: flex;
+    justify-content: center;
+   
+    >.item {
+     width: 20%;
+     height: 100%;
+     margin: 0 5px;
+     border-radius: 5px;
+     background-color: whitesmoke;
+   
+     /* display: flex;
+     flex-direction: column;
+     align-items: center; */
+   
+     position: relative;
+     top: -40px;
+   
+     padding: 10px;
+   
+     box-shadow: 0px 0px 75px -18px rgba(0,0,0,1);
+   
+     >div:first-child {
+      margin: auto;
+      width: 40%;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background-color: var(--main-yellow);
+   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   
+      position: relative;
+      top: -40px;
+   
+      >img {
+       width: 45%;
+      }
+     }
+   
+     >div:nth-child(2) {
+      width:100%;
+      font-size: 1.25em;
+      font-weight: bolder;
+      margin-bottom: 10px;
+      text-align: center;
+     }
+   
+     >div:last-child {
+      width: 100%;
+      text-align: center;
+      color: rgba(82, 82, 82, 0.655)
+     }
+    }
+   }
+
+.sec-with-picture {
+    height: 100%;
+    background-color: var(--main-yellow);
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 40%;
+    height: auto;
+    margin-left: 27%;
+    margin-top: 10%;
+    position: absolute;
+    z-index: 1;
+}
+
+.statement {
+    position: absolute;
+    margin-left: 52%;
+    margin-top: 20%;
+    padding: 20px;
+    width: 20%;
+    height: 40%;
+    background-color: whitesmoke;
+    z-index: 2;
+}
+
+.second-section {
+    height: 65%;
+    background-color: #d9d9d9;
+}
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+height: 35%;
+width: 50%;
+margin-left: 25%;
+padding-top: 10%;
+}
+
+.grid {
+    padding: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+}
+
+.box {
+    height: 90px;
+    width: 80px;
+    background-color: orange;
+}
+
+.decoration-ideas, .kitchen {
+    height: 110%;
+    background-color: #d9d9d9;
+}
+
+.paragraph {
+    position: absolute;
+    margin-left: 35%;
+    padding: 20px;
+    width: 25%;
+    height: 35%;
+    background-color: whitesmoke;
+    z-index: 2;
+}
+
+.imgs {
+    display: flex;
+}
+
+.chair {
+    width: 15%;
+    height: 35%;
+    margin-left: 24%;
+    margin-top: 8%;
+}
+
+.img-room-clock {
+    width: 30%;
+    height: 35%;
+    margin-left: 3%;
+    margin-top: 12%;
+}
+
+.woman {
+    width: 15%;
+    height: 30%;
+    margin-left: 7%;
+    margin-top: 3%;
+} 
+
+.pyfik {
+    width: 15%;
+    height: 30%;
+    margin-left: 35%;
+    margin-bottom: 3%;
+}
+
+.section-picture {
+    height: 80%;
+    background-color: var(--main-yellow);
+}
+
+.statement-2 {
+    position: absolute;
+    margin-left: 52%;
+    margin-top: 10%;
+    padding: 20px;
+    width: 20%;
+    height: 40%;
+    background-color: whitesmoke;
+    z-index: 2;
+}
+
+.image-2 {
+    width: 25%;
+    height: 60%;
+    margin-left: 30%;
+    margin-top: 5%;
+    position: absolute;
+    z-index: 1;
+}
+
+.grey-block {
+    width: 30%;
+    height: 30%;
+    background-color: #d9d9d9;
+    position: absolute;
+    z-index: 0;
+    margin-top: 22%;
+    margin-left: 45%;
+}
+
+.grey-circle {
+    width: 8%;
+    height: 15%;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    margin-left: 67%;
+    margin-top: 7%;
+}
+
+.paragraph-2 {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 37%;
+    padding: 20px;
+    width: 20%;
+    height: 35%;
+    background-color: whitesmoke;
+    z-index: 2;
+}
+
+.chair-2 {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 26%;
+    z-index: 2;
+}
+
+.yellow-kitchen {
+    width: 25%;
+    height: 40%;
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 10%;
+    z-index: 1;
+}
+
+.room{
+    width: 22%;
+    height: 20%;
+    margin-top: 37%;
+    margin-left: 25%;
+}
+
+.cooking {
+    width: 13%;
+    height: 30%;
+    margin-left: 12%;
+}
+
+.contacts {
+    height: 70%;
+    background-color: var(--main-yellow);
+}
+
+
+.contact-us {
+    margin-left: 40%;
+    width: 30%;
+    height: 80%;
+    background-color: whitesmoke;
+    padding-top: 30px;
+}
+
+.name, .email {
+    background-color: #d9d9d9;
+    border: none;
+    width: 80%;
+    height: 10%;
+    margin-top: 30px;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.type-text {
+    width: 80%;
+    height: 30%;
+    margin-top: 30px;
+    margin-left: 10%;
+    background-color: #d9d9d9;
+    border: none;
+    text-align: center;
+}
