@@ -1,0 +1,86 @@
+<body>
+    <div class="clculator1">
+        <h1>Калькулятор площі трикутника</h1>
+        <span for="sideA">Сторона A</span>
+        <input type="number" id="sideA" placeholder="Введіть сторону A">
+
+        <span for="sideB">Сторона B</span>
+        <input type="number" id="sideB" placeholder="Введіть сторону B">
+
+        <span for="sideC">Сторона C</span>
+        <input type="number" id="sideC" placeholder="Введіть сторону C">
+
+        <button onclick="calculateArea()">Розрахувати</button>
+
+        <p id="result">Площа трикутника </p>
+        <script src="./main.js"></script>
+    </div>
+
+    <div class="calculator2">
+        <h1>Калькулятор площі трикутника за сторонами і кутом</h1>
+        <span for="sideA">Сторона A</span>
+        <input type="number" id="sideA" placeholder="Введіть сторону A">
+
+        <span for="sideB">Сторона B</span>
+        <input type="number" id="sideB" placeholder="Введіть сторону B">
+
+        <span for="angle">Кут між сторонами </span>
+        <input type="number" id="angle" placeholder="Введіть кут">
+
+        <button onclick="calculateArea1()">Розрахувати</button>
+
+        <p id="result1">Площа трикутника </p>
+    </div>
+
+    <div class="calculator3">
+        <h1>Калькулятор площі трикутника за стороною і висотою</h1>
+        <span for="side">Сторона трикутника</span>
+        <input type="number" id="side" placeholder="Введіть сторону трикутника">
+
+        <span for="height">Висота трикутника</span>
+        <input type="number" id="height" placeholder="Введіть висоту трикутника">
+
+        <button onclick="calculateArea2()">Розрахувати</button>
+
+        <p id="result2">Площа трикутника</p>
+    </div>
+
+    <div class="calculator4">
+        <h1>Калькулятор площі трикутника за сторонами і радіусом описаного кола</h1>
+        <span for="sideA">Сторона A</span>
+        <input type="number" id="sideA" placeholder="Введіть сторону A">
+
+        <span for="sideB">Сторона B</span>
+        <input type="number" id="sideB" placeholder="Введіть сторону B">
+
+        <span for="sideC">Сторона C</span>
+        <input type="number" id="sideC" placeholder="Введіть сторону C">
+
+        <span for="radius">Радіус описаного кола</span>
+        <input type="number" id="radius" placeholder="Введіть радіус">
+
+        <button onclick="calculateArea3()">Розрахувати</button>
+
+        <p id="result3">Площа трикутника та радіус описаного кола </p>
+    </div>
+
+    <div class="calculator5">
+        <h1>Калькулятор чисел Фібоначчі</h1>
+        <span for="fibonacciIndex">Порядковий номер</span>
+        <input type="number" id="fibonacciIndex" placeholder="Введіть порядковий номер">
+
+        <button onclick="calculateFibonacci()">Вивести число</button>
+
+        <p id="result4">Число Фібоначчі: </p>
+    </div>
+
+    <div class="calculator6">
+        <h1>Перевірка числа в послідовності Фібоначчі</h1>
+        <span for="fibonacciNumber">Число</span>
+        <input type="number" id="fibonacciNumber" placeholder="Введіть число">
+    
+        <button onclick="checkFibonacci()">Перевірити</button>
+    
+        <p id="result5">Результат перевірки: </p>
+    </div>
+</body>
